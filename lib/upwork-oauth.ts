@@ -52,7 +52,7 @@ export class UpworkOAuth {
       console.log('Requesting OAuth token from Upwork...');
       console.log('Using callback URL:', this.callbackURL);
 
-      this.oauth.getOAuthRequestToken((error, oauthToken, oauthTokenSecret, results) => {
+      this.oauth.getOAuthRequestToken((error : any, oauthToken : any, oauthTokenSecret : any, results : any) => {
         if (error) {
           // Log detailed error information
           console.error('Detailed OAuth error:', {
