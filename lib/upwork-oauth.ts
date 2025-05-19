@@ -29,7 +29,7 @@ export class UpworkOAuth {
     }
 
     // Base URL should be configurable for different environments
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://upwork-automation-ms2h.vercel.app';
     this.callbackURL = `${baseUrl}/auth/upwork/callback`;
 
     // Initialize OAuth
